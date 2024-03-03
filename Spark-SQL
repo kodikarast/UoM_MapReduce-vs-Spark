@@ -1,0 +1,7 @@
+spark-sql;
+
+SELECT Year, avg((CarrierDelay /ArrDelay)*100) from delay_flights GROUP BY Year; --repeat for five times
+SELECT Year, avg((NASDelay /ArrDelay)*100) from delay_flights GROUP BY Year; --repeat for five times
+SELECT Year, avg((WeatherDelay /ArrDelay)*100) from delay_flights GROUP BY Year; --repeat for five times
+SELECT Year, avg((LateAircraftDelay /ArrDelay)*100) from delay_flights GROUP BY Year; --repeat for five times
+SELECT Year, avg((SecurityDelay /ArrDelay)*100) from delay_flights GROUP BY Year; --repeat for five times
